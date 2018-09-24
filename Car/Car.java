@@ -9,7 +9,7 @@ public class Car {
 		brand = "GTR";
 		tank = 10;
 		oilConsumption =10;
-	}
+	}//初始化属性定义
 	
 	public void buildCar() {
 		Scanner sc = new Scanner(System.in);
