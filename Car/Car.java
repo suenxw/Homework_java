@@ -1,40 +1,40 @@
 import java.util.Scanner;
 
 public class Car {
-	public String brand;
-	public int tank;
-	public int oilConsumption;
+	public String brand;//æ±½è½¦å
+	public int tank;//ä¸€ä¸ªæ²¹ç®±ç”¨æ¥å‚¨å­˜æ±½æ²¹
+	public int oilConsumption;//æ²¹è€—
 	
 	public Car() {
-		brand = "°ÂÍØ";
+		brand = "GTR";
 		tank = 10;
 		oilConsumption =10;
 	}
 	
 	public void buildCar() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÊäÈëÄãĞèÒªµÄ³µµÄÆ·ÅÆ");
+		System.out.println("è¾“å…¥æ±½è½¦å");
 		brand = sc.next();
-		System.out.println("ÊäÈëÄãĞèÒªµÄ³µµÄÓÍÏä´óĞ¡");
+		System.out.println("è¾“å…¥æ²¹ç®±å¤§å°");
 		tank = sc.nextInt();
-		System.out.println("ÊäÈëÄãĞèÒªµÄ³µµÄÓÍºÄ");
+		System.out.println("è¾“å…¥è½¦çš„æ²¹è€—");
 		oilConsumption = sc.nextInt();
 	}
 	
 	public boolean gas() {
-		System.out.println("ÓÍÒÑ¼ÓÂú");
+		System.out.println("æ²¹å·²åŠ æ»¡");
 		return true;
 	}
 	
 	public boolean run() {
-		System.out.println("³µÒÑ¿ª¶¯");
+		System.out.println("è½¦å·²å¼€åŠ¨");
 		return true;
 	}
 	
-	public void look() {
-		System.out.println("ÄãÓĞÒ»Á¾"+brand+"ÅÆµÄ³µ");
-		System.out.println("ÄãµÄ³µµÄÓÍÏäÎª "+tank+" L");
-		System.out.println("ÄãµÄ³µµÄÓÍºÄÎª "+oilConsumption+" L/km");
+	public void nature() {
+		System.out.println("ä½ æœ‰ä¸€è¾†"+brand+"ç‰Œçš„è½¦");
+		System.out.println("ä½ çš„è½¦çš„æ²¹ç®±ä¸º "+tank+" L");
+		System.out.println("ä½ çš„è½¦çš„æ²¹è€—ä¸º "+oilConsumption+" L/km");
 	}
 	
 
